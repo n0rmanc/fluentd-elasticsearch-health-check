@@ -1,0 +1,55 @@
+[
+{
+"_id": "grabbers",
+"_type": "dashboard",
+"_source": {
+"title": "grabbers",
+"hits": 0,
+"description": "",
+"panelsJSON": "[{\"id\":\"lazada-grabber-produce-feeds\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":3,\"size_y\":2,\"col\":1,\"row\":1},{\"id\":\"lazada-grabber-workers\",\"type\":\"visualization\",\"panelIndex\":2,\"size_x\":3,\"size_y\":2,\"col\":4,\"row\":1}]",
+"optionsJSON": "{\"darkTheme\":false}",
+"uiStateJSON": "{}",
+"version": 1,
+"timeRestore": false,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+}
+}
+},
+{
+"_id": "imagical",
+"_type": "dashboard",
+"_source": {
+"title": "imagical",
+"hits": 0,
+"description": "",
+"panelsJSON": "[{\"id\":\"imagical-save-pictures.\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":3,\"size_y\":2,\"col\":1,\"row\":1},{\"id\":\"imagical-workers\",\"type\":\"visualization\",\"panelIndex\":2,\"size_x\":3,\"size_y\":2,\"col\":4,\"row\":1},{\"id\":\"formatter-parse-feeds\",\"type\":\"visualization\",\"panelIndex\":3,\"size_x\":3,\"size_y\":2,\"col\":7,\"row\":1},{\"id\":\"formatter-workers\",\"type\":\"visualization\",\"panelIndex\":4,\"size_x\":3,\"size_y\":2,\"col\":10,\"row\":1}]",
+"optionsJSON": "{\"darkTheme\":false}",
+"uiStateJSON": "{}",
+"version": 1,
+"timeRestore": true,
+"timeTo": "now",
+"timeFrom": "now-1h",
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+}
+}
+},
+{
+"_id": "db-loader",
+"_type": "dashboard",
+"_source": {
+"title": "db loader",
+"hits": 0,
+"description": "",
+"panelsJSON": "[{\"col\":1,\"id\":\"db-loader-picture-feeds\",\"panelIndex\":1,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"db-loader-product-feeds\",\"panelIndex\":2,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"db-loader-tag-feeds\",\"panelIndex\":3,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":10,\"id\":\"db-loader-save-success\",\"panelIndex\":4,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"db-loader-picture-workers\",\"panelIndex\":5,\"row\":3,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"db-loader-product-workers\",\"panelIndex\":6,\"row\":3,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"db-loader-tag-workers\",\"panelIndex\":7,\"row\":3,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":10,\"id\":\"db-loader-workers\",\"panelIndex\":8,\"row\":3,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"id\":\"db-loader-error-workers\",\"type\":\"visualization\",\"panelIndex\":9,\"size_x\":3,\"size_y\":2,\"col\":1,\"row\":5}]",
+"optionsJSON": "{\"darkTheme\":false}",
+"uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}},\"P-2\":{\"vis\":{\"legendOpen\":false}},\"P-4\":{\"vis\":{\"legendOpen\":false}},\"P-5\":{\"vis\":{\"legendOpen\":false}},\"P-6\":{\"vis\":{\"legendOpen\":false}},\"P-8\":{\"vis\":{\"legendOpen\":false}}}",
+"version": 1,
+"timeRestore": false,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+}
+}
+}
+]

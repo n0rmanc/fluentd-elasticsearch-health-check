@@ -1,0 +1,4 @@
+fluent:
+  build: .
+  ports:
+    - '24220:24220'

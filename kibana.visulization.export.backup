@@ -1,0 +1,212 @@
+[
+{
+"_id": "lazada-grabber-workers",
+"_type": "visualization",
+"_source": {
+"title": "lazada grabber workers",
+"visState": "{\"title\":\"lazada grabber produce feeds\",\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":false,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"container_id\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"container_name:lazada AND log: DEBUG\"}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "formatter-parse-feeds",
+"_type": "visualization",
+"_source": {
+"title": "formatter parse feeds",
+"visState": "{\"title\":\"lazada grabber workers\",\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":false,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: formatter AND log: INFO AND log: feed\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "lazada-grabber-produce-feeds",
+"_type": "visualization",
+"_source": {
+"title": "lazada grabber produce feeds",
+"visState": "{\"title\":\"New Visualization\",\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":false,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name:lazada AND log: DEBUG\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "imagical-workers",
+"_type": "visualization",
+"_source": {
+"title": "imagical workers",
+"visState": "{\"title\":\"imagical save pictures.\",\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":false,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"container_id\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: imagical AND log: Save AND log: End\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "imagical-save-pictures.",
+"_type": "visualization",
+"_source": {
+"title": "imagical save pictures.",
+"visState": "{\"title\":\"New Visualization\",\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":false,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: imagical AND log: Save AND log: End\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "db-loader-picture-workers",
+"_type": "visualization",
+"_source": {
+"title": "db-loader picture workers",
+"visState": "{\"title\":\"db-loader tag workers\",\"type\":\"area\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"container_id\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: db-loader AND log: feef AND log: asset\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "db-loader-product-workers",
+"_type": "visualization",
+"_source": {
+"title": "db-loader product workers",
+"visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{\"field\":\"container_id\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@timestamp\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"title\":\"formatter workers\",\"type\":\"area\"}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: db-loader AND log: feef AND log: title\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "db-loader-tag-workers",
+"_type": "visualization",
+"_source": {
+"title": "db-loader tag workers",
+"visState": "{\"title\":\"db-loader tag feeds\",\"type\":\"area\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"container_id\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: db-loader AND log: feef AND log: name\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "db-loader-picture-feeds",
+"_type": "visualization",
+"_source": {
+"title": "db-loader picture feeds",
+"visState": "{\"title\":\"db-loader picture workers\",\"type\":\"area\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: db-loader AND log: feef AND log: asset\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "formatter-workers",
+"_type": "visualization",
+"_source": {
+"title": "formatter workers",
+"visState": "{\"title\":\"formatter parse feeds\",\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":false,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"container_id\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: formatter AND log: INFO AND log: feed\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "db-loader-product-feeds",
+"_type": "visualization",
+"_source": {
+"title": "db-loader product feeds",
+"visState": "{\"title\":\"db-loader product workers\",\"type\":\"area\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: db-loader AND log: feef AND log: title\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "db-loader-tag-feeds",
+"_type": "visualization",
+"_source": {
+"title": "db-loader tag feeds",
+"visState": "{\"title\":\"db-loader product feeds\",\"type\":\"area\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: db-loader AND log: feef AND log: name\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "db-loader-save-success",
+"_type": "visualization",
+"_source": {
+"title": "db-loader save success",
+"visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@timestamp\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"title\":\"db-loader picture feeds\",\"type\":\"area\"}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"container_name: db-loader AND log: feef\"}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "db-loader-workers",
+"_type": "visualization",
+"_source": {
+"title": "db-loader workers",
+"visState": "{\"title\":\"db-loader save success\",\"type\":\"area\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"container_id\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: db-loader AND log:feef\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+},
+{
+"_id": "db-loader-error-workers",
+"_type": "visualization",
+"_source": {
+"title": "db loader error workers",
+"visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{\"field\":\"container_id\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@timestamp\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"title\":\"db-loader workers\",\"type\":\"area\"}",
+"uiStateJSON": "{}",
+"description": "",
+"version": 1,
+"kibanaSavedObjectMeta": {
+"searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"container_name: db-loader AND log: error\",\"analyze_wildcard\":true}},\"filter\":[]}"
+}
+}
+}
+]
